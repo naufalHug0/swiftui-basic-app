@@ -9,11 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        // stack components vertically
+        VStack(spacing: 2) {
+//            Image(systemName: "folder")
+//                .imageScale(.large)
+//                .foregroundStyle(Color("Primary Accent Color"))
+            
+            Image("image")
+                .imageScale(.small)
+                .blur(radius: 2.0)
+                .cornerRadius(15.0)
+            Text("Hello, world!").bold().foregroundStyle(Color("Primary Accent Color"))
+            
         }
         .padding()
     }
